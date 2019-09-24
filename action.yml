@@ -1,0 +1,15 @@
+name: "Test Action"
+description: "action used for testing"
+inputs:
+  greet:
+    description: "greet"
+    default: "world"
+    required: true
+
+outputs:
+  time:
+    description: "timestamp"
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
